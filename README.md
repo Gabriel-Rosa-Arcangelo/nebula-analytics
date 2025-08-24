@@ -16,9 +16,8 @@ Built to be modular, extensible and portfolio‑ready.
   - Layout responsivo e componentes reutilizáveis
 
 ## 🧰 Prerequisites
-- **Python 3.10+** (recomendado)
+- **Python 3.10+** 
 - **Node 18+** (Vite/Recharts)
-- Redis/Postgres são opcionais para etapas futuras
 
 ## 🚀 Setup — Backend
 ```bash
