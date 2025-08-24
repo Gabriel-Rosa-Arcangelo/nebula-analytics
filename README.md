@@ -50,7 +50,7 @@ npm run dev
 localStorage.setItem('nebula_token', '<SEU_ACCESS_TOKEN>');
 ```
 
-## 🔗 Endpoints principais
+## 🔗 Endpoints
 ```
 GET /api/analytics/kpis/
 GET /api/analytics/trend/?days=30
@@ -63,7 +63,7 @@ GET/POST /api/settings/ (stub)
 python manage.py seed_analytics --days 90
 ```
 
-## 📦 Produção (resumo)
+## 📦 Production
 - DEBUG=False, ALLOWED_HOSTS configurado
 - Postgres + Gunicorn + Nginx
 - Static/media via S3/Cloud Storage (ou Nginx)
@@ -71,10 +71,11 @@ python manage.py seed_analytics --days 90
 - CI/CD opcional (GitHub Actions)
 
 ## 📸 Screenshots
-- docs/screenshot-dashboard.png
-- docs/screenshot-reports.png
-- docs/screenshot-datasources.png
-- docs/screenshot-settings.png
+<img src="docs/screenshot-dashboard.png" width="640"/>
+<img src="docs/screenshot-reports.png" width="640"/>
+<img src="docs/screenshot-datasources.png" width="640"/>
+<img src="docs/screenshot-settings.png" width="640"/>
+
 
 ## 📝 License
 MIT — use freely.
