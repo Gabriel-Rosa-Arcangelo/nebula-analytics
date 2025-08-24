@@ -1,0 +1,22 @@
+/* src/index.css */
+@import "tailwindcss";
+
+/* Paleta do seu brand */
+@theme {
+  --color-bg: #0B0F19;
+  --color-card: #111827;
+  --color-border: #1F2937;
+  --color-purple: #7C3AED;
+  --color-cyan: #38B2AC;
+  --color-text: #E5E7EB; /* gray-200 */
+}
+
+/* Base global */
+html, body, #root {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+}

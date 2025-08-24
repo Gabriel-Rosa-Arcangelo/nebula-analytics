@@ -1,0 +1,52 @@
+# --- Python / Django ---
+__pycache__/
+*.py[cod]
+*.sqlite3
+db.sqlite3
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.env
+.env.*
+venv/
+.venv/
+coverage/
+htmlcov/
+
+# Django static/media (ajuste se usar S3)
+backend/staticfiles/
+backend/media/
+media/
+staticfiles/
+
+# VSCode / IDE
+.vscode/
+.idea/
+
+# Mac / Linux misc
+.DS_Store
+Thumbs.db
+
+# --- Node / Vite / React ---
+node_modules/
+dist/
+build/
+*.local
+*.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+frontend/.env
+frontend/.env.*
+.vite/
+vite.config.temp.*
+
+# --- Docker (se usar) ---
+docker-compose.override.yml
