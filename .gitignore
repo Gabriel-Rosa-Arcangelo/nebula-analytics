@@ -14,6 +14,9 @@ db.sqlite3
 .pytest_cache/
 .env
 .env.*
+!.env.example
+!backend/.env.example
+!frontend/.env.example
 venv/
 .venv/
 coverage/

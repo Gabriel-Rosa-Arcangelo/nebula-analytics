@@ -15,6 +15,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("api/accounts/", include("accounts.urls")),
     path("api/analytics/", include("analytics.urls")),  # já existia
+    path("api/", include("dashboards.urls")),
 ]
 
 # === ALIASES PARA NÃO QUEBRAR O FRONT ===

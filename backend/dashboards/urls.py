@@ -14,6 +14,5 @@ router.register("widgets",    WidgetViewSet,    basename="widgets")
 
 urlpatterns = [
     path("", views.index, name="index"),
-]
-
+] + router.urls
 

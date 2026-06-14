@@ -23,9 +23,6 @@ from datetime import date, timedelta
 import random
 
 from rest_framework import status
-from rest_framework.permissions import AllowAny
-
-
 class SalesEventViewSet(viewsets.ReadOnlyModelViewSet):
     queryset = SalesEvent.objects.all().order_by("-occurred_at")
     serializer_class = SalesEventSerializer
@@ -95,7 +92,7 @@ _FAKE_DATASOURCES = [
 ]
 
 class DataSourceListCreate(APIView):
-    permission_classes = [AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request):
         return Response(_FAKE_DATASOURCES)
@@ -113,7 +110,7 @@ class DataSourceListCreate(APIView):
         return Response(item, status=status.HTTP_201_CREATED)
 
 class DataSourceDetail(APIView):
-    permission_classes = [AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request, pk):
         for d in _FAKE_DATASOURCES:
@@ -128,7 +125,7 @@ _FAKE_REPORTS = [
 ]
 
 class ReportListCreate(APIView):
-    permission_classes = [AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request):
         return Response(_FAKE_REPORTS)
@@ -140,7 +137,7 @@ class ReportListCreate(APIView):
         return Response(item, status=201)
 
 class ReportDetail(APIView):
-    permission_classes = [AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request, pk):
         for r in _FAKE_REPORTS:
@@ -157,7 +154,7 @@ _SETTINGS = {
 }
 
 class SettingsView(APIView):
-    permission_classes = [AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
 
     def get(self, request):
         return Response(_SETTINGS)

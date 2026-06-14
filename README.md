@@ -7,7 +7,7 @@ Built to be modular, extensible and portfolio‑ready.
 - **Backend (Django + DRF)**
   - JWT auth (SimpleJWT)
   - Analytics endpoints: KPIs, Trend, Top Products, Distribution
-  - Stubs para Data Sources / Reports / Settings (com rotas prontas)
+  - Authenticated demo endpoints for Data Sources / Reports / Settings
   - Seed script para dados sintéticos
   - CORS configurado para o front
 - **Frontend (React + Vite + Tailwind)**
@@ -68,7 +68,7 @@ python manage.py seed_analytics --days 90
 - Postgres + Gunicorn + Nginx
 - Static/media via S3/Cloud Storage (ou Nginx)
 - TLS (Let's Encrypt)
-- CI/CD opcional (GitHub Actions)
+- GitHub Actions validates backend tests and frontend lint/build
 
 ## 📸 Screenshots
 <img src="docs/screenshot-dashboard.png" width="640"/>
@@ -79,5 +79,4 @@ python manage.py seed_analytics --days 90
 
 ## 📝 License
 MIT — use freely.
-
 
