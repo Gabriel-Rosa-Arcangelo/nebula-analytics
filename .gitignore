@@ -48,6 +48,7 @@ yarn-error.log*
 pnpm-debug.log*
 frontend/.env
 frontend/.env.*
+!frontend/.env.example
 .vite/
 vite.config.temp.*
 
