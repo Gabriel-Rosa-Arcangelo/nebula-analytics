@@ -75,8 +75,3 @@ python manage.py seed_analytics --days 90
 <img src="docs/screenshot-reports.png" width="640"/>
 <img src="docs/screenshot-datasources.png" width="640"/>
 <img src="docs/screenshot-settings.png" width="640"/>
-
-
-## 📝 License
-MIT — use freely.
-
